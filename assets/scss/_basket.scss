@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .item-price,
 .none {
   text-align: center;
@@ -17,6 +21,8 @@
   background-color: rgb(150, 200, 241);
   border-radius: 10px;
   border: 3px solid #0069d9;
+  right: 0;
+  margin-right: -250px;
   display: none;
 }
 
