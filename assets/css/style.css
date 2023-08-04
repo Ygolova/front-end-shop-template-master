@@ -9548,6 +9548,7 @@ body {
   right: 0;
   margin-right: -250px;
   display: none;
+  z-index: 777;
 }
 
 .delete {
