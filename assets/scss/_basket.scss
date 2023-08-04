@@ -1,0 +1,91 @@
+.item-price,
+.none {
+  text-align: center;
+
+  color: #ffffff;
+
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.background-basket {
+  position: absolute;
+  width: 450px;
+  height: 210px;
+  background-color: red;
+  margin-top: 38px;
+  background-color: rgb(150, 200, 241);
+  border-radius: 10px;
+  border: 3px solid #0069d9;
+  display: none;
+}
+
+.delete {
+  width: 102px;
+  height: 53px;
+  grid-area: delete;
+}
+
+.order {
+  display: flex;
+  width: 140px;
+  height: 53px;
+  align-items: center;
+  grid-area: order;
+  justify-content: center;
+}
+
+.next {
+  width: 100px;
+  height: 53px;
+  margin-left: -17px;
+  grid-area: next;
+}
+
+.order,
+.delete,
+.next {
+  color: #1d2124;
+  border-radius: 7px;
+  background-color: white;
+  transition: background-color 0.5s;
+  margin: 9px;
+}
+
+.delete:hover,
+.order:hover,
+.next:hover {
+  background-color: #007bff;
+}
+
+.none {
+  position: absolute;
+  width: 210px;
+  height: 170px;
+  background-color: rgb(150, 200, 241);
+  margin-top: 38px;
+  display: none;
+  text-shadow: 2px 2px 0px black;
+  border-radius: 10px;
+  border: 3px solid #0069d9;
+  display: none;
+}
+
+.nonesVisibles {
+  display: block;
+}
+
+.sum {
+  grid-area: sum;
+  text-shadow: 2px 2px black;
+}
+
+.visibles {
+  grid-template-areas:
+    "sum sum sum"
+    "next order delete";
+  display: grid;
+  justify-content: center;
+  gap: 7px;
+  align-items: end;
+}
